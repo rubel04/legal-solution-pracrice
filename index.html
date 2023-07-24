@@ -1,37 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal solution</title>
-    <!-- daisy & tailwind cdn setup -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- tailwind custom color setup -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                'radient-start': '#FF8938',
-                'radient-end': '#F00',
-                'ft-radient-start': '#F00',
-                'ft-radient-end': '#FF8938',
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legal solution</title>
+  <!-- daisy & tailwind cdn setup -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;800&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/bc436b3cc3.js" crossorigin="anonymous"></script>
+  <style>
+    .eb-font {
+      font-family: 'EB Garamond', serif;
+    }
+  </style>
+  <!-- tailwind custom color setup -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'border-color':'bg-gradient-to-r from-[#F3F3F3] to-[rgba(243, 243, 243, 0.00) 100%)]',
+            
           }
         }
-      </script>
+      }
+    }
+  </script>
 </head>
-<body>
-    <header>
-        <h2 class=""></h2>
-    </header>
-    <main>
 
-    </main>
-    <footer>
+<body class="container mx-auto">
+  <header>
+    <!-- this is navabr -->
+    <nav>
+    </nav>
+    <!-- this is banner section -->
+    <section class="mt-5">
+      <div class="hero" style="background-image: url(./images/banner.png);">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="lg:px-28 lg:py-16">
+            <h1 class="mb-5 text-7xl font-extrabold text-[#FFF]">We Provide Effective Legal Solutions</h1>
+            <p class="mb-5 text-[#E7E7E7]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <input type="text" placeholder="Search your services" class="input input-bordered lg:w-full max-w-xl" />
+            <button class="btn bg-[#B68C5A] text-white border-none py-4 px-8 ml-2 ">Search</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <!-- The Legal Practice Area section -->
+    <section class="mt-16 text-center">
+      <h2 class="text-4xl font-extrabold text-[#414040]">The Legal Practice Area</h2>
+      <p class="text-[#707070] mt-3">
+        There are many variations of passages of Lorem Ipsum available, but the majority have
+        <br>
+       suffered alteration in some form, by injected humour.
+      </p>
+      <!-- card container -->
+      <div class="py-10 grid gap-y-10 lg:gap-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <!-- first card -->
+        <div>
+          <div class="card border-r border-b">
+            <figure><img src="./images/business.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="text-3xl font-extrabold justify-center">Business Law</h2>
+              <p>There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some <br> form, by injected humour.</p>
+              <div class="">
+                <i class="fa-solid fa-arrow-right p-3 rounded-full bg-[#B68C5A] text-white"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- second card -->
+        <div>
+          <div class="card border-b ">
+            <figure><img src="./images/criminal.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="text-3xl font-extrabold justify-center">Criminal Law</h2>
+              <p>There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some <br> form, by injected humour.</p>
+              <div class="">
+                <i class="fa-solid fa-arrow-right p-3 rounded-full bg-[#B68C5A] text-white"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- third card -->
+        <div>
+          <div class="card border-b border-l ">
+            <figure><img src="./images/child.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="text-3xl font-extrabold justify-center">Child Support</h2>
+              <p>There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some <br> form, by injected humour.</p>
+              <div class="">
+                <i class="fa-solid fa-arrow-right p-3 rounded-full bg-[#B68C5A] text-white"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fourth card -->
+        <div>
+          <div class="card ">
+            <figure><img src="./images/education.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="text-3xl font-extrabold justify-center">Education Law</h2>
+              <p>There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some <br> form, by injected humour.</p>
+              <div class="">
+                <i class="fa-solid fa-arrow-right p-3 rounded-full bg-[#B68C5A] text-white"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fifth card -->
+        <div>
+          <div class="card border-x ">
+            <figure><img src="./images/divorce.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="text-3xl font-extrabold justify-center">Divorce Law</h2>
+              <p>There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some <br> form, by injected humour.</p>
+              <div class="">
+                <i class="fa-solid fa-arrow-right p-3 rounded-full bg-[#B68C5A] text-white"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sixth card -->
+        <div>
+          <div class="card ">
+            <figure><img src="./images/child.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="text-3xl font-extrabold justify-center">Tax Law</h2>
+              <p>There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some <br> form, by injected humour.</p>
+              <div class="">
+                <i class="fa-solid fa-arrow-right p-3 rounded-full bg-[#B68C5A] text-white"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- What Our Client Say section -->
+    <section class="mt-16 text-center">
+      <h2 class="text-4xl font-extrabold text-[#414040]">What Our Client Say</h2>
+      <p class="text-[#707070] mt-3">
+        There are many variations of passages of Lorem Ipsum available, but the majority have
+        <br>
+       suffered alteration in some form, by injected humour.
+      </p>
+    </section>
+  </main>
+  <footer>
 
-    </footer>
+  </footer>
 </body>
+
 </html>
